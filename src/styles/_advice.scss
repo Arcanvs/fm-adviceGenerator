@@ -1,0 +1,52 @@
+.advice{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.advice__card{
+    min-height: 366px;
+    width: 540px;
+    .card__body{
+        background-color: $darkGrayishBlue;
+        height: 333px;
+        border-radius: 16px;
+        .body__title{
+            padding-top: 46px;
+            text-align: center;
+            h1{
+                margin:0;
+                font-size: 14px;
+                color: $neonGreen;
+            }
+        }
+        .body__quote{
+            font-size: 28px;
+            text-align: center;
+            padding: 0 46px;
+            line-height: 1.3;
+            height: 110px;
+            margin-bottom: 35px;
+        }
+        .body__divider{
+            padding: 0 48px;
+        }
+        .body__button{
+            display: flex;
+            position: relative;
+            top: 35px;
+            justify-content: center;
+            button{
+                width: 64px;
+                height: 64px;
+                background-color: $neonGreen;
+                border-radius: 100%;
+                cursor: pointer;
+                &:hover{
+                    filter: drop-shadow(0px 0px 30px hsla(150deg, 100%, 66%, 0.5));
+                }
+                
+            }
+        }
+    }
+}
